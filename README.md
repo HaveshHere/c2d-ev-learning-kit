@@ -1,2 +1,69 @@
 # 🔋🚗 c2d-ev-learning-kit
 An interactive IoT EV educational platform built with ESP32 and web telemetry for SKEE3733 Integrated Design Project at University Teknologi Malaysia. The system uses sequential LED paths and a pedal simulator to demonstrate charging and driving dynamics.
+
+## 🛠️ Features
+
+Here's what you can do with this hands-on EV educational ki:
+
+* **Interactive Touchscreen Quiz:** Work through guided multiple-choice questions on a 3.2" SPI TFT display (ILI9341 Driver + XPT2046 Touch) to master EV concepts.
+* **Sequential LED Power Flow:** Watch WS2812B addressable LEDs light up step-by-step across 3D-printed infrastructure models as you answer correctly, using color conventions (Red for AC, Green for DC) to trace energy paths.
+* **Single-Pedal & Regen Simulation:** Use a custom 3D-printed spring-return pedal with a rack-and-pinion potentiometer mechanism to control a DC motor and observe real-time regenerative braking LED feedback.
+* **Multi-Module Coverage:** Explore three distinct EV energy pathways: Home AC Charging, DC Fast Charging (with Solar/BESS integration), and Driving & Regenerative Energy Recovery.
+* **Live IoT Dashboard:** Experience real-time synchronization over Wi-Fi/MQTT (HiveMQ Cloud TLS) to a MySQL database and web platform that tracks speed, node states, and quiz performance.
+* **Multi-Sensory Feedback:** Receive instant audio feedback (ascending/descending tones) via a passive buzzer alongside screen highlights for correct and incorrect answers.
+
+---
+
+## 🕹️ How to Play & Use the Kit
+
+1. **Power On & Link Kit:** Connect the battery pack and switch the power ON. Note the kit's MAC address displayed on the welcome screen, open the web portal, select your kit from the active list, and click "Link" until the status dot turns green.
+2. **Select a Module:** Tap the TFT touchscreen to choose between **Module 1 (Home AC Charging)**, **Module 2 (DC Fast Charging)**, or **Module 3 (Driving & Regenerative Braking)**.
+3. **Review Content:** View the module preview and notes on the website to understand the underlying electrical concepts before attempting the quiz.
+4. **Answer Quiz Questions:** Tap choice A, B, or C on the touchscreen:
+   * *Correct Answer:* The screen flashes green, a success chime plays, and the next LED segment illuminates to extend the power flow path.
+   * *Incorrect Answer:* The screen prompts you to try again without locking the system.
+   * *Skip Step:* Press the `SKIP >>` button in the corner if you already understand a step to fast-forward the LED path.
+5. **Drive & Regenerate (Module 3):** Press the physical pedal to accelerate the DC motor (observing energy flowing from Battery $\rightarrow$ Inverter $\rightarrow$ Motor). Release the pedal to simulate regenerative braking, where kinetic energy reverses back into the battery.
+6. **Complete & Review:** Complete all questions to trigger the victory fanfare and light up the full energy path. Visit your student dashboard on the web platform to review your final score, percentage, and detailed question breakdown.
+
+---
+
+## 📅 The Process
+
+Our team began by identifying the core learning challenges students face when trying to visualize hidden EV energy flows. We designed a Google Forms survey and clustered feedback from over 50 respondents to define our persona and design requirements. 
+
+Once the conceptual architecture was established, we split development into parallel hardware and software tasks:
+* **Hardware & Circuitry:** We breadboarded the ESP32, TFT touchscreen, LED strips, motor driver, and potentiometer. After verifying component compatibility, we designed a custom PCB in EasyEDA to eliminate jumper wires and stepped down battery voltage using a 5V buck converter to safely power logic circuits.
+* **Mechanical Design:** We modeled scenery components (transmission towers, substations, chargers, BESS) and a custom pedal assembly in Fusion 360/SolidWorks, printing them on a 3D printer.
+* **Firmware & State Machine:** We wrote non-blocking C++ firmware in Arduino IDE using a Finite State Machine (FSM) so touchscreen interactions, LED animations, buzzer tones, and MQTT telemetry could operate concurrently without freezing.
+* **Web Platform & IoT Middleware:** We built a PHP/MySQL web platform paired with a background daemon (`mqtt-bridge.php`) that listens to HiveMQ Cloud MQTT topics and updates the database in real time.
+
+During testing, we encountered and resolved several engineering challenges, such as routing potentiometer signals from ADC2 pins (which conflict with Wi-Fi) to independent ADC1 pins (GPIO 34), implementing dead-zone filtering to eliminate motor whine at idle, and rewriting startup audio sequences to run non-blocking.
+
+---
+
+## 📈 Overall Growth
+
+Working on this Integrated Design Project provided us with deep hands-on experience in full-stack embedded systems and IoT development. We strengthened our ability to:
+* Manage multi-disciplinary engineering workflows spanning hardware PCB design, 3D mechanical fabrication, C++ firmware, and PHP/MySQL web backends.
+* Debug complex hardware-software integration conflicts, such as shared SPI bus chip select timing, ADC Wi-Fi radio conflicts, and signal noise filtering.
+* Apply user-centered design principles by translating survey input into an intuitive, multi-sensory educational product.
+* Collaborate effectively as an engineering team under tight academic deadlines, balancing tasks across mechanical, electrical, and software domains.
+
+---
+
+## 💭 How Can It Be Improved?
+
+* **Cloud Migration:** Transition the website server from local host (Laragon) to a public cloud platform (e.g., AWS or Render) for global remote classroom access.
+* **Wi-Fi Auto-Provisioning:** Implement `WiFiManager` auto-portal configuration to allow Wi-Fi connection updates without reflashing ESP32 firmware.
+* **Real Sensor Telemetry:** Integrate physical current/voltage sensors (e.g., INA219) and temperature sensors to report actual live power readings alongside simulated values.
+* **Expanded EV Architectures:** Add modular hardware plug-ins for Hybrid Electric Vehicles (HEVs), Fuel Cell EVs (FCEVs), and Vehicle-to-Grid (V2G) bidirectional charging.
+* **Multiplayer Learning Mode:** Introduce head-to-head competitive quiz modes between multiple physical kits in a classroom setting.
+
+---
+
+## 🚦 Running the Project
+
+### Prerequisites
+* **Hardware:** ESP32 Dev Kit, 3.2" SPI TFT Display (ILI9341), WS2812B LED strip, L298N Motor Driver, DC Motor, 10k Potentiometer, Passive Buzzer, Buck Converter, and 7.4V Battery Pack.
+* **Software:** Arduino IDE (for firmware), Laragon/XAMPP (Apache + PHP + MySQL for web portal), and a HiveMQ Cloud MQTT account.
