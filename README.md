@@ -3,7 +3,7 @@ An interactive IoT EV educational platform built with ESP32 and web telemetry fo
 
 ## 🛠️ Features
 
-Here's what you can do with this hands-on EV educational ki:
+Here's what you can do with this hands-on EV educational kit:
 
 * **Interactive Touchscreen Quiz:** Work through guided multiple-choice questions on a 3.2" SPI TFT display (ILI9341 Driver + XPT2046 Touch) to master EV concepts.
 * **Sequential LED Power Flow:** Watch WS2812B addressable LEDs light up step-by-step across 3D-printed infrastructure models as you answer correctly, using color conventions (Red for AC, Green for DC) to trace energy paths.
@@ -11,8 +11,6 @@ Here's what you can do with this hands-on EV educational ki:
 * **Multi-Module Coverage:** Explore three distinct EV energy pathways: Home AC Charging, DC Fast Charging (with Solar/BESS integration), and Driving & Regenerative Energy Recovery.
 * **Live IoT Dashboard:** Experience real-time synchronization over Wi-Fi/MQTT (HiveMQ Cloud TLS) to a MySQL database and web platform that tracks speed, node states, and quiz performance.
 * **Multi-Sensory Feedback:** Receive instant audio feedback (ascending/descending tones) via a passive buzzer alongside screen highlights for correct and incorrect answers.
-
----
 
 ## 🕹️ How to Play & Use the Kit
 
@@ -26,8 +24,6 @@ Here's what you can do with this hands-on EV educational ki:
 5. **Drive & Regenerate (Module 3):** Press the physical pedal to accelerate the DC motor (observing energy flowing from Battery $\rightarrow$ Inverter $\rightarrow$ Motor). Release the pedal to simulate regenerative braking, where kinetic energy reverses back into the battery.
 6. **Complete & Review:** Complete all questions to trigger the victory fanfare and light up the full energy path. Visit your student dashboard on the web platform to review your final score, percentage, and detailed question breakdown.
 
----
-
 ## 📅 The Process
 
 Our team began by identifying the core learning challenges students face when trying to visualize hidden EV energy flows. We designed a Google Forms survey and clustered feedback from over 50 respondents to define our persona and design requirements. 
@@ -40,17 +36,15 @@ Once the conceptual architecture was established, we split development into para
 
 During testing, we encountered and resolved several engineering challenges, such as routing potentiometer signals from ADC2 pins (which conflict with Wi-Fi) to independent ADC1 pins (GPIO 34), implementing dead-zone filtering to eliminate motor whine at idle, and rewriting startup audio sequences to run non-blocking.
 
----
-
 ## 📈 Overall Growth
 
-Working on this Integrated Design Project provided us with deep hands-on experience in full-stack embedded systems and IoT development. We strengthened our ability to:
-* Manage multi-disciplinary engineering workflows spanning hardware PCB design, 3D mechanical fabrication, C++ firmware, and PHP/MySQL web backends.
-* Debug complex hardware-software integration conflicts, such as shared SPI bus chip select timing, ADC Wi-Fi radio conflicts, and signal noise filtering.
-* Apply user-centered design principles by translating survey input into an intuitive, multi-sensory educational product.
-* Collaborate effectively as an engineering team under tight academic deadlines, balancing tasks across mechanical, electrical, and software domains.
+Leading the touchscreen UI design and quiz logic for this Integrated Design Project gave me invaluable technical confidence and practical engineering experience:
 
----
+* **Embedded GUI Programming:** Mastered low-level graphics rendering and touch-coordinate mapping using `TFT_eSPI` and C++ on the ESP32.
+* **Non-Blocking Architecture:** Learned how to write event-driven code and finite state machines (FSM) to handle touch interrupts, screen blinking, passive buzzer melodies, and MQTT data publishing concurrently.
+* **User Experience (UX) Design for Micro-Screens:** Developed an eye for color-contrast, font hierarchy, and touch-target padding within a compact $320 \times 240$ pixel resolution.
+* **Technical Problem Solving:** Successfully debugged resistive touch unresponsiveness and touch-bus crosstalk through methodical calibration and pin isolation.
+* **Educational Content Curation:** Gained skill in simplifying complex technical topics (like OBC AC-to-DC rectification and BESS solar integration) into clear, concise multiple-choice quiz steps.
 
 ## 💭 How Can It Be Improved?
 
@@ -60,9 +54,7 @@ Working on this Integrated Design Project provided us with deep hands-on experie
 * **Expanded EV Architectures:** Add modular hardware plug-ins for Hybrid Electric Vehicles (HEVs), Fuel Cell EVs (FCEVs), and Vehicle-to-Grid (V2G) bidirectional charging.
 * **Multiplayer Learning Mode:** Introduce head-to-head competitive quiz modes between multiple physical kits in a classroom setting.
 
----
-
-## 🚦 Running the Project
+## ▶️ Running the Project
 
 ### Prerequisites
 * **Hardware:** ESP32 Dev Kit, 3.2" SPI TFT Display (ILI9341), WS2812B LED strip, L298N Motor Driver, DC Motor, 10k Potentiometer, Passive Buzzer, Buck Converter, and 7.4V Battery Pack.
