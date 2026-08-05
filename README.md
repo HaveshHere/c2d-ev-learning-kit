@@ -91,3 +91,7 @@ EES 2026 Presentation Poster:
 ## 📖 Final Technical Report & Verification
 
 [Group P1G13 Technical Report (W14).pdf](https://github.com/user-attachments/files/30724845/Group.P1G13.Technical.Report.W14.pdf)
+
+## 🎥 Video
+
+https://youtu.be/fkE3xXpfQMQ
