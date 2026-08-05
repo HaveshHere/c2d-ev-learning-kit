@@ -64,9 +64,9 @@ Below is the complete PDF guidance for setting up, configuring, and operating th
 
 [C2D EV Kit Guideline.pdf](https://github.com/user-attachments/files/30724692/C2D.EV.Kit.Guideline.pdf)
 
-## 📝 Documentation
+## 📝 Project Documentation & Reports
 
-All project reports, technical design documents, and individual contributions are available below:
+All weekly progress logs, individual contributions, and developmental reports are available below:
 
 1. [Discussion Note (W1-W12).pdf](https://github.com/user-attachments/files/30724794/Discussion.Note.W1-W12.pdf)
 
@@ -78,6 +78,14 @@ All project reports, technical design documents, and individual contributions ar
 
 5. [Individual Report 3.pdf](https://github.com/user-attachments/files/30724830/Individual.Report.3.pdf)
 
-6. [P1G13 Abstract EES2026.pdf](https://github.com/user-attachments/files/30724834/P1G13.Abstract.EES2026.pdf)
+## 🎨 EES 2026 Showcase Materials
 
-7. [Group P1G13 Technical Report (W14).pdf](https://github.com/user-attachments/files/30724845/Group.P1G13.Technical.Report.W14.pdf)
+Presentation materials prepared for the Electrical Engineering Showcase (EES 2026) at Universiti Teknologi Malaysia (UTM)
+
+[P1G13 Abstract EES2026.pdf](https://github.com/user-attachments/files/30724834/P1G13.Abstract.EES2026.pdf)
+
+<img width="2245" height="3179" alt="Image" src="https://github.com/user-attachments/assets/a6db46ea-d694-4cb2-8d51-b05373c1becb" />
+
+## 📖 Final Technical Report & Verification
+
+[Group P1G13 Technical Report (W14).pdf](https://github.com/user-attachments/files/30724845/Group.P1G13.Technical.Report.W14.pdf)
