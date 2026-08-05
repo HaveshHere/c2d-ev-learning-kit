@@ -76,8 +76,8 @@ All project reports, technical design documents, and individual contributions ar
 
 [Individual Report 2.pdf](https://github.com/user-attachments/files/30724817/Individual.Report.2.pdf)
 
-**[Individual Report 3.pdf](https://github.com/user-attachments/files/30724830/Individual.Report.3.pdf)
+[Individual Report 3.pdf](https://github.com/user-attachments/files/30724830/Individual.Report.3.pdf)
 
-**[P1G13 Abstract EES2026.pdf](https://github.com/user-attachments/files/30724834/P1G13.Abstract.EES2026.pdf)
+[P1G13 Abstract EES2026.pdf](https://github.com/user-attachments/files/30724834/P1G13.Abstract.EES2026.pdf)
 
-**[Group P1G13 Technical Report (W14).pdf](https://github.com/user-attachments/files/30724845/Group.P1G13.Technical.Report.W14.pdf)
+[Group P1G13 Technical Report (W14).pdf](https://github.com/user-attachments/files/30724845/Group.P1G13.Technical.Report.W14.pdf)
