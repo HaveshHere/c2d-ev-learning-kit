@@ -84,6 +84,8 @@ Presentation materials prepared for the Electrical Engineering Showcase (EES 202
 
 [P1G13 Abstract EES2026.pdf](https://github.com/user-attachments/files/30724834/P1G13.Abstract.EES2026.pdf)
 
+**[EES 2026 Presentation Poster (PDF)]
+
 <img width="2245" height="3179" alt="Image" src="https://github.com/user-attachments/assets/a6db46ea-d694-4cb2-8d51-b05373c1becb" />
 
 ## 📖 Final Technical Report & Verification
