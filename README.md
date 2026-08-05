@@ -59,3 +59,7 @@ Leading the touchscreen UI design and quiz logic for this Integrated Design Proj
 ### Prerequisites
 * **Hardware:** ESP32 Dev Kit, 3.2" SPI TFT Display (ILI9341), WS2812B LED strip, L298N Motor Driver, DC Motor, 10k Potentiometer, Passive Buzzer, Buck Converter, and 7.4V Battery Pack.
 * **Software:** Arduino IDE (for firmware), Laragon/XAMPP (Apache + PHP + MySQL for web portal), and a HiveMQ Cloud MQTT account.
+
+Below is the complete PDF guidance for setting up, configuring, and operating the system:
+
+[C2D EV Kit Guideline.pdf](https://github.com/user-attachments/files/30724692/C2D.EV.Kit.Guideline.pdf)
