@@ -76,7 +76,7 @@ All weekly progress logs, individual contributions, and developmental reports ar
 
 4. [Individual Report 2.pdf](https://github.com/user-attachments/files/30724817/Individual.Report.2.pdf)
 
-5. [Individual Report 3.pdf](https://github.com/user-attachments/files/30724830/Individual.Report.3.pdf)
+5. [Individual Report 3.pdf](https://github.com/user-attachments/files/30725135/Individual.Report.3.pdf)
 
 ## 🎨 EES 2026 Showcase Materials
 
