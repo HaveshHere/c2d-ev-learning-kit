@@ -68,13 +68,13 @@ Below is the complete PDF guidance for setting up, configuring, and operating th
 
 All project reports, technical design documents, and individual contributions are available below:
 
-**[Discussion Note (W1-W12).pdf](https://github.com/user-attachments/files/30724794/Discussion.Note.W1-W12.pdf)
+[Discussion Note (W1-W12).pdf](https://github.com/user-attachments/files/30724794/Discussion.Note.W1-W12.pdf)
 
-**[Documentation.pdf](https://github.com/user-attachments/files/30724847/Documentation.pdf)
+[Documentation.pdf](https://github.com/user-attachments/files/30724847/Documentation.pdf)
 
-**[Individual Report 1.pdf](https://github.com/user-attachments/files/30724804/Individual.Report.1.pdf)
+[Individual Report 1.pdf](https://github.com/user-attachments/files/30724804/Individual.Report.1.pdf)
 
-**[Individual Report 2.pdf](https://github.com/user-attachments/files/30724817/Individual.Report.2.pdf)
+[Individual Report 2.pdf](https://github.com/user-attachments/files/30724817/Individual.Report.2.pdf)
 
 **[Individual Report 3.pdf](https://github.com/user-attachments/files/30724830/Individual.Report.3.pdf)
 
