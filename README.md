@@ -82,9 +82,9 @@ All weekly progress logs, individual contributions, and developmental reports ar
 
 Presentation materials prepared for the Electrical Engineering Showcase (EES 2026) at Universiti Teknologi Malaysia (UTM)
 
-[P1G13 Abstract EES2026.pdf](https://github.com/user-attachments/files/30724834/P1G13.Abstract.EES2026.pdf)
+1. [P1G13 Abstract EES2026.pdf](https://github.com/user-attachments/files/30724834/P1G13.Abstract.EES2026.pdf)
 
-EES 2026 Presentation Poster:
+2. EES 2026 Presentation Poster:
 
 <img width="2245" height="3179" alt="Image" src="https://github.com/user-attachments/assets/a6db46ea-d694-4cb2-8d51-b05373c1becb" />
 
