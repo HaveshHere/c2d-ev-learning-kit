@@ -88,7 +88,7 @@ Presentation materials prepared for the Electrical Engineering Showcase (EES 202
 
 <img width="2245" height="3179" alt="Image" src="https://github.com/user-attachments/assets/a6db46ea-d694-4cb2-8d51-b05373c1becb" />
 
-## 📖 Final Technical Report & Verification
+## 📖 Final Technical Report
 
 [Group P1G13 Technical Report (W14).pdf](https://github.com/user-attachments/files/30724845/Group.P1G13.Technical.Report.W14.pdf)
 
